@@ -24,14 +24,15 @@
 
 /* Change the button appearance on hover. */
 .filter-btn:hover {
-  background-color: #cbd5e0;
+  background-color: #a7e78b;
   transform: translateY(-2px);
 }
 
 /* Style the currently selected button.
    This class is added and removed with jQuery. */
 .filter-btn.active {
-  
+  background-color: rgb(14, 211, 14);
+  color: rgb(3, 91, 3);
 }
 
 
@@ -48,8 +49,7 @@
    can fit in each row without needing media queries. */
 .card-grid {
   display: grid;
-  grid-template-columns: ;
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   background-color: white;
   padding: 1rem;
   border-radius: 18px;
@@ -83,7 +83,7 @@
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
   font-weight: bold;
-  color: #805ad5;
+  color: green;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -93,6 +93,7 @@
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+  color: darkmagenta;
 }
 
 /* Style the final paragraph inside each card. */
@@ -155,6 +156,7 @@ header {
 header h1 {
   margin-bottom: 0.5rem;
   font-size: 2.25rem;
+  color: purple;
 }
 
 /* Limit the paragraph width so it is easier to read. */
